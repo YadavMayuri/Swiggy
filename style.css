@@ -4,6 +4,12 @@
     box-sizing: border-box;
     font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
 }
+html{
+    font-size: 62.5%;
+    font-size: 1rem;
+    font-size: 10px;
+
+}
 
 .screen {
     border: 2px solid black;
@@ -495,7 +501,7 @@
 .header {
     border-bottom: 1px solid lightgray;
     width: 100%;
-    height: 80px;
+    /* height: 80px; */
     padding: 0px 20px;
     position: fixed;
     top: 0;
@@ -510,32 +516,35 @@
     display: flex;
     justify-content: space-between;
     font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
-    font-size: 0.875em;
+    font-size:1.4rem;
    
 }
 
 .left-navbar {
-    width: 30%;
-    /* border: 2px solid palegreen; */
+    width: 35%;
+    border: 2px solid palegreen;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .right-navbar {
-    /* border: 2px solid palegreen; */
+    border: 2px solid palegreen;
     width: 50%;
-    font-size: 20px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .product-swiggy-logo {
-    width: 10%;
+    width: 8%;
     height: 70%;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 }
 
 .location-name {
-    width: 80%;
+    width: 85%;
     border: 1px solid blue;
     display:flex;
     justify-content: space-between;
@@ -548,7 +557,7 @@
 }
 
 .exact-location {
-    font-size: 1em;
+    font-size: 1.4rem;
     font-weight: 700;
     color: #3d4152;
     line-height: 1.2;
@@ -561,7 +570,7 @@
 
 .sub-location {
     width: 80%;
-    font-size: 1em;
+    font-size: 1.4rem;
     padding-left: 5px;
     margin-left: 5px;
     color: #686b78;
@@ -571,7 +580,7 @@
 }
 
 .up-arrow {
-    font-size: 1em;
+    font-size: 1.4rem;
     color: #fc8019;
     font-weight: 700;
     border: 1px solid yellow;
@@ -579,14 +588,22 @@
 }
 
 .p-navbar-list {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 1.4rem;
     align-items: center;
-    margin-top: 22px;
+    border: 1px solid blue;
+    /* margin-top: 22px; */
 
 }
-
+.p-list-item{
+    width: 16%;
+    border: 1px solid palevioletred;
+}
+.p-list-item:hover{
+    color: #fc8019;
+}
 .p-list-item>div>a {
     list-style: none;
     text-decoration: none;
@@ -598,7 +615,7 @@
 }
 
 .p-nav-icon {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-right: 5px;
     color: #3d4152;
     line-height: 1.2;
@@ -606,7 +623,7 @@
 }
 
 .p-nav-menu {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #3d4152;
     line-height: 1.2;
 }
@@ -619,8 +636,8 @@
     justify-content: space-between;
     border-bottom: 1px solid lightgray;
     align-items: center;
-    height: 80px;
-    padding: 0px 20px 0px 20px;
+    /* height: 80px; */
+    padding: 20px 20px 20px 20px;
     margin-top: 100px;
     position: sticky;
     z-index: 2;
@@ -635,7 +652,7 @@
 }
 .left-filter-content >h2{
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 2.6rem;
     color: #282c3f;
     line-height: 1.2;
 }
@@ -645,11 +662,12 @@
     /* border: 1px solid green; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .right-filter-menu {
     color: #686b78;
-    font-size: 16px;
+    font-size: 1.6rem;
     text-transform: capitalize;
     font-weight: 300;
     cursor: pointer;
@@ -658,7 +676,7 @@
 .active-filter-menu {
     color: #3d4152;
     border-bottom: 1px solid #3d4152;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
 
 }
 .p-filter-icon{
@@ -673,9 +691,10 @@
 .product-content-wrapper{
     /* border: 2px solid red; */
     display: flex;
+    width: 90%;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin:20px auto;
 }
 .product-dish{
     width: 23%;
@@ -684,7 +703,7 @@
     padding: 14px;
 }
 .quick-view{
-    font-size: 14px;
+    font-size: 1.4rem;
     color: blue;
     font-weight: 600;
     text-align: center;
@@ -701,7 +720,7 @@
 }
 .product-image{
     width: 100%;
-    height: 150px;
+    /* height: 150px; */
 
 }
 .product-image>img{
@@ -713,13 +732,13 @@
     padding: 12px 0px;
 }
 .product-maker-name{
-    font-size: 17px;
+    font-size: 1.7rem;
     line-height: 1.2;
     font-weight: 500;
 }
 .product-maker-location{
     color: #686b78;
-    font-size: 13px;
+    font-size: 1.3rem;
     line-height: 1.2;
     margin-top: 4px;
     cursor: pointer;
@@ -744,7 +763,7 @@
 }
 .rating-icon{
     width: 48%;
-    font-size: 0.75em;
+    font-size: 1.2rem;
     vertical-align: middle;
     text-align: center;
 
@@ -756,12 +775,12 @@
 }
 .rating-count{
     width: 48%;
-    font-size: 0.75em;
+    font-size: 1.2rem;
     text-align: center;
 }
 .delivery-time{
     width: 25%;
-    font-size: 0.75em;
+    font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.2;
     color: #535665;
@@ -772,7 +791,7 @@
 }
 .delivery-qty-count{
     width: 40%;
-    font-size: 0.75em;
+    font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.2;
     color: #535665;
@@ -792,7 +811,7 @@
 }
 .discount-icon{
     color: #8a584b;
-    font-size:0.5em ;
+    font-size:.8rem ;
     line-height: 1.2;
     border: 2px solid #8a584b;
     border-radius: 100px;
@@ -805,7 +824,7 @@
 }
 .discount-number{
     color: #8a584b;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.2;
     font-weight: 500;
 }

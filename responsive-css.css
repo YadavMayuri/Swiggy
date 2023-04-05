@@ -1,0 +1,39 @@
+
+
+@media screen and (max-width:1237px){
+    html{
+        font-size: 60%;
+    }
+}
+@media screen and (max-width:1020px){
+    html{
+        font-size: 53%;
+    }
+}
+
+@media screen and (max-width:998px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+@media screen and (max-width:856px){
+    html{
+        font-size: 40%;
+    }
+}
+@media screen and (max-width:711px){
+    html{
+        font-size: 35%;
+    }
+}
+@media screen and (max-width:638px){
+    html{
+        font-size: 30%;
+    }
+}
