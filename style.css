@@ -510,7 +510,7 @@
     display: flex;
     justify-content: space-between;
     font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
-    font-size: 14px;
+    font-size: 0.875em;
    
 }
 
@@ -535,8 +535,11 @@
 }
 
 .location-name {
-    width: 75%;
-    /* border: 1px solid blue; */
+    width: 80%;
+    border: 1px solid blue;
+    display:flex;
+    justify-content: space-between;
+    /* display: inline-block; */
 }
 
 .product-swiggy-logo>a>img {
@@ -545,22 +548,34 @@
 }
 
 .exact-location {
+    font-size: 1em;
     font-weight: 700;
     color: #3d4152;
     line-height: 1.2;
     cursor: pointer;
-    border-bottom: 2px solid #3d4152;
+    /* border-bottom: 2px solid #3d4152; */
+    letter-spacing: 0.4px;
+    border: 1px solid yellow;
+    width: 15%;
 }
 
 .sub-location {
+    width: 80%;
+    font-size: 1em;
     padding-left: 5px;
     margin-left: 5px;
     color: #686b78;
+    letter-spacing: 0.4px;
+    border: 1px solid blueviolet;
+
 }
 
 .up-arrow {
+    font-size: 1em;
     color: #fc8019;
     font-weight: 700;
+    border: 1px solid yellow;
+    width: 5%;
 }
 
 .p-navbar-list {
@@ -605,19 +620,22 @@
     border-bottom: 1px solid lightgray;
     align-items: center;
     height: 80px;
-    padding: 30px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
     margin-top: 100px;
     position: sticky;
     z-index: 2;
-    background-color: white;
+    background-color: yellowgreen;
     top: 0;
 }
 
 .left-filter-content {
     width: 20%;
     /* border: 1px solid green; */
+  
+}
+.left-filter-content >h2{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.5em;
     color: #282c3f;
     line-height: 1.2;
 }
@@ -674,7 +692,7 @@
     /* display: none; */
 }
 .product-dish:hover{
-    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
 .product-dish>a{
@@ -707,42 +725,61 @@
     cursor: pointer;
 }
 .rating-price-info{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .rating{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: white;
     background-color: #db7c38; 
     padding: 2px 6px;
     line-height: 1.2;
+    border: 1px solid green;
+
 }
 .rating-icon{
-    font-size: 12px;
+    width: 48%;
+    font-size: 0.75em;
     vertical-align: middle;
     text-align: center;
 
 }
+.dot-icon{
+    width: 2%;
+    border: 1px solid blue;
+
+}
 .rating-count{
-    font-size: 12px;
+    width: 48%;
+    font-size: 0.75em;
     text-align: center;
 }
 .delivery-time{
-    font-size: 12px;
+    width: 25%;
+    font-size: 0.75em;
     font-weight: 300;
     line-height: 1.2;
     color: #535665;
     cursor: pointer;
     text-transform: uppercase;
+    border: 1px solid green;
 
 }
 .delivery-qty-count{
-    font-size: 12px;
+    width: 40%;
+    font-size: 0.75em;
     font-weight: 300;
     line-height: 1.2;
     color: #535665;
     cursor: pointer;
     text-transform: uppercase;
+    border: 1px solid green;
+
 }
 .h-line{
     border: 1px solid #a9abb2;
@@ -755,7 +792,7 @@
 }
 .discount-icon{
     color: #8a584b;
-    font-size:8px ;
+    font-size:0.5em ;
     line-height: 1.2;
     border: 2px solid #8a584b;
     border-radius: 100px;
