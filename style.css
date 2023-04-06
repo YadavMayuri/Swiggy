@@ -118,17 +118,11 @@ html {
 }
 
 .search-your-food {
-    border: .1rem solid#fc8019;
+    border: .1rem solid #a9abb2;
     width: 100%;
     display: flex;
     align-items: center;
     margin: 3rem 0rem;
-}
-
-.enter-delivery-location {
-    color: #282c3f;
-    width: 14rem;
-
 }
 
 .enter-delivery-location {
@@ -137,6 +131,8 @@ html {
     font-size: 1.8rem;
     outline: none;
     border: none;
+    color: #282c3f;
+
 }
 
 .locate-me-btn {
