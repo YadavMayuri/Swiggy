@@ -526,7 +526,7 @@ html {
     position: fixed;
     top: 0;
     background-color: white;
-    z-index: 1;
+    z-index: 2;
 }
 
 .navbar {
@@ -947,14 +947,29 @@ html {
 
 
 /* ---------------single product page ----------------- */
+.outer-container{
+    margin: 7% auto 0% auto; 
+    /* border: .2rem solid blue; */
+    background-color: white;
+    position: sticky;
+    z-index: 3;
+}
 
 
 .sp-container {
     width: 60%;
-    margin: 7% auto;
-    border: .2rem solid red;
+    margin: 0% auto 0% auto; 
+    /* border: .2rem solid red; */
 }
+.sp-section-1{
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    background-color: white;
+    padding: 1.2rem 0rem;
+    border-bottom: .1rem solid #d8d9da;
 
+}
 .sp-section-1 {
     width: 100%;
     /* border: .1rem solid blue; */
@@ -1003,8 +1018,8 @@ html {
     letter-spacing: 0.04rem;
 }
 
-.sp-active {
-    color: #535665
+.breadcrumbs> span:nth-child(7)>a {
+    color: #535665;
 }
 
 .sp-product-name-time {
@@ -1184,7 +1199,7 @@ html {
 }
 
 .sp-clock-icon {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
 
 }
 
@@ -1193,3 +1208,304 @@ html {
     align-items: center;
     gap: .4rem;
 }
+
+.veg-only {
+    font-size: 1.4rem;
+    color: #282c3f;
+    line-height: 1.2;
+    letter-spacing: 0.04rem;
+    font-weight: 600;
+    /* border: .1rem solid blue; */
+    margin-top: 4rem;
+}
+
+.sp-hr-line-div {
+    border-bottom: 0.5px solid #d3d3d3;
+    height: 0.5px;
+    margin: 2rem 0rem;
+}
+
+.other-products {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    cursor: pointer;
+
+}
+
+.sp-veg-icon {
+    width: 4%;
+    /* height: 2.2rem; */
+}
+
+.sp-veg-icon>img {
+    width: 100%;
+    height: 100%;
+}
+
+.deal-product-name {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    letter-spacing: 0.04rem;
+    font-weight: 500;
+    color: #282c3f;
+    margin: .8rem 0rem;
+}
+
+.strike-price {
+    font-weight: 300;
+    color: #7e808c;
+    text-decoration: line-through;
+
+}
+
+.exact-price {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    letter-spacing: 0.04rem;
+    font-weight: 500;
+    color: #3e4152;
+    margin-left: .6rem;
+}
+
+.sp-deal-products {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    /* border: .2rem solid blueviolet; */
+    padding: 1.5rem .8rem;
+}
+
+.deal-img-add-btn {
+    /* border: .1rem solid goldenrod; */
+    width: 20%;
+    height: 100%;
+
+}
+
+.deal-info {
+    /* border: .2rem solid palevioletred; */
+    width: 70%;
+    height: 100%;
+}
+
+.deal-img {
+    width: 90%;
+    height: 12rem;
+    margin: auto;
+}
+
+.deal-img>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+
+}
+
+.sp-add-btn {
+    background-color: white;
+    color: #60b246;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem 1rem;
+    outline: none;
+    border: .1rem solid #8b8d97;
+    border-radius: .5rem;
+    width: 60%;
+    /* height: 4rem; */
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    margin-top: -7rem;
+    margin-left: 3.2rem;
+}
+
+.main-border {
+    height: 1.6rem;
+    border-bottom: 1.6rem solid #f1f1f6;
+    margin: 1.6rem 0rem;
+    outline: none;
+}
+.sp-footer-info{
+    /* border: .1rem solid red; */
+    padding: 1.4rem 1.4rem 10rem 1.4rem;
+    margin-top: 2rem;
+    background-color: #f1f1f6;
+    color: #93959f;
+    font-size: 1.3rem;
+    letter-spacing: 0.04rem;
+}
+.sp-f-wrappwr{
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+}
+.sp-f-img{
+    width: 10%;
+    height: 3.5rem;
+}
+.sp-f-img>img{
+    width: 100%;
+    height: 100%;
+}
+.ap-f-p-name{
+    color: #93959f;
+    font-size: 1.4rem;
+    letter-spacing: 0.04rem;
+    font-weight: 700;
+}
+.outlet-name{
+    color: #93959f;
+    font-size: 1.4rem;
+    letter-spacing: 0.04rem;
+    margin-top: .4rem;
+}
+.sp-address{
+    color: #93959f;
+    font-size: 1.2rem;
+    letter-spacing: 0.04rem;
+    margin-top: 1.4rem;
+   
+}
+.sp-f-l-icon{
+    margin-right: .6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
