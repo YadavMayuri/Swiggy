@@ -1374,23 +1374,106 @@ html {
 }
 
 
+/* ------------- Login Page -------------------- */
 
+.l-screen{
+    width: 100%;
 
+}
+.l-container{
+    width: 100%;
+    border: .2rem solid red;
+    display: flex;
+}
+.l-left-side{
+    width: 62%;
+    border: .1rem solid blue;
+}
+.l-right-side{
+    width: 38%;
+    border: .1rem solid green;
+    padding: 2.5rem;
+}
+.l-content-wrapper{
+    border: .1rem solid orange;
+}
+.login-create-ac{
+    display: flex;
+    justify-content: space-between;
+    border: .1rem solid gray;
+}
+.l-left-login{
+    width: 40%;
+    border: .1rem solid greenyellow;
+}
+.l-right-img{
+    width: 25%;
+    border: .1rem solid greenyellow;
+}
+.l-right-img>img{
+    width: 100%;
+    height: 100%;
+}
 
+.l-close-btn{
+    font-size: 2.8rem ;
+    color: #535665;
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+}
+.l-heading{
+    font-size: 3rem;
+    color: #282c3f;
+    letter-spacing: .04rem;
+    line-height: 1.2;
+}
+.l-create-ac-txt{
+    font-weight: 600;
+    cursor: pointer;
+    color: #fc8019;
+    text-decoration: none;
 
+    
+}
+.l-create-ac{
+    font-size: 1.8rem;
+    color: #282c3f;
+    letter-spacing: .04rem;
+    line-height: 1.2;
+    margin-top: 1rem;
+}
+.l-hr-line{
+    outline: none;
+    width: 30%;
+    border: .1rem solid #282c3f;
+    margin-top: 2rem;
+}
+.l-input-login{
+    border: .1rem solid lightgray;
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+.l-input-login>input{
+margin-top: 1rem;
+border: none;
+outline: none;
+width: 100%;
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.l-login-btn{
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    line-height: .5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #fc8019;
+    padding: 2rem ;
+}
 
 
 
