@@ -1388,6 +1388,7 @@ html {
 
 .l-screen {
     width: 100%;
+    position: relative;
 
 }
 
@@ -1396,7 +1397,7 @@ html {
     /* border: .2rem solid red; */
     display: flex;
     height: 100vh;
-    
+
 }
 
 .l-left-side {
@@ -1416,7 +1417,7 @@ html {
 .l-right-side {
     width: 38%;
     /* border: .1rem solid green; */
-    padding: 3.5rem;
+    padding: 4rem;
     left: auto;
     right: 0px;
     position: fixed;
@@ -1424,13 +1425,47 @@ html {
 
 .l-content-wrapper {
     /* border: .1rem solid orange; */
-    
+
 }
 
 .login-create-ac {
     display: flex;
     justify-content: space-between;
     /* border: .1rem solid gray; */
+    margin-bottom: 2rem;
+}
+.l-input-login{
+    position: relative;
+    width: 100%;
+    height: 6rem;
+    /* margin-bottom: 2rem; */
+}
+.l-input-login>input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    padding: 1.6rem;
+    border: .2rem solid red;
+    font-size: 1.4rem;
+}
+.l-input-login>label{
+    position: absolute;
+    top: 1;
+    left: 1;
+    padding: 1.6rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    transition: .5s;
+    pointer-events: none;
+
+}
+.l-input-login input:focus ~label,
+.l-input-login input:valid ~label
+{
+    transform:translateX(-1rem) translateY(-1.8rem);
+    font-size: 1rem;
+    /* margin-top: 1.8rem; */
 }
 
 .l-left-login {
@@ -1447,15 +1482,18 @@ html {
     width: 100%;
     height: 100%;
 }
+.l-close-btn{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
 
-.l-close-btn {
+.l-close-btn>a {
     font-size: 2.8rem;
     color: #535665;
     cursor: pointer;
     font-weight: 600;
     outline: none;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+   
 }
 
 .l-heading {
@@ -1466,7 +1504,7 @@ html {
 }
 
 .l-create-ac-txt {
-    font-weight: 600;
+    /* font-weight: 600; */
     cursor: pointer;
     color: #fc8019;
     text-decoration: none;
@@ -1491,9 +1529,9 @@ html {
 
 .l-input-login {
     border: .1rem solid lightgray;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 1.4rem;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 
 .l-input-login>input {
@@ -1501,23 +1539,50 @@ html {
     border: none;
     outline: none;
     width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #282c3f;
+    line-height: 1.2;
+    letter-spacing: .04rem;
+    font-family: sans-serif;;
 
 }
-
+.l-ref-txt{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #5d8ed5;
+    cursor: pointer;
+    background-color: transparent;
+    letter-spacing: .02rem;
+    border: none;
+    outline: none;
+    line-height: 1.2;
+}
 .l-login-btn {
     width: 100%;
-    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.l-login-btn>a {
+    width: 100%;
     cursor: pointer;
     text-align: center;
     border: none;
+    display: inline-block;
     line-height: .5rem;
     font-size: 1.4rem;
     font-weight: 600;
-    color: #fff;
+    padding:  2.2rem;
+    margin-top: 2.6rem;color: white;
     background-color: #fc8019;
-    padding: 2.5rem;
-    margin-top: 2.6rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 .1rem .3rem 0 rgba(0, 0, 0, .12) ;
+    
 }
+
 
 .l-login-para {
     font-size: 1.4rem;
