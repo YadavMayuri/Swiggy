@@ -789,14 +789,18 @@ html {
     padding: 1.4rem;
 }
 
-.quick-view {
-    font-size: 1.4rem;
-    color: blue;
-    font-weight: 600;
-    text-align: center;
-    padding: .4rem;
-    /* display: none; */
+ .quick-view {
+       font-size: 1.4rem;
+       color: blue;
+       font-weight: 600;
+       text-align: center;
+       padding: .4rem;
 }
+.product-dish:hover + .quick-view{
+    /* display:block; */
+   
+    display: none;
+} 
 
 .product-dish:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
@@ -1600,3 +1604,61 @@ html {
     cursor: pointer;
     font-weight: 600;
 }
+
+/* ----------success delivery note --------------------------------------------- */
+.thank-txt{
+    display: flex;
+    gap: 2rem;
+}
+.s-d-note{
+    border: .1rem solid black;
+    width: 60%;
+    /* margin-left: 6rem; */
+    margin: 6rem auto;
+    margin-top: 15rem;
+}
+.success-icon{
+    font-size: 3rem;
+    color:#fc8019;
+}
+.s-d-heading{
+  font-size: 3rem;
+    color:#fc8019;
+    margin-top: ;
+}
+.s-d-para{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    
+}
+.sw-wrapper{
+    width: 60%;
+    margin: 6rem auto;
+    /* border: .2rem solid palevioletred; */
+    padding: 6rem;
+}
+.sw-sd-img{
+    width: 40%;
+    
+    border: .2rem solid blue;
+}
+.sw-sd-img>img{
+    width: 100%;
+    height: 100%;
+}
+.s-d-note{
+    display: flex;
+    /* gap: 1rem; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
