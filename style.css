@@ -822,9 +822,30 @@ html {
     width: 100%;
     height: 100%;
 }
+.promoted-wrapper{
+    position:relative;
+    left: 0rem;
+    top: -19.5rem;
+    /* background-color: #8a584b; */
+    /* color: #fff; */
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: .5rem .9rem .4rem;
+    max-width: 35%;
+    text-transform: uppercase;
+    /* border-color: #8a584b; */
+    background: rgb(58, 60, 65);
+    color: rgb(255, 255, 255);
+    border-color: rgb(30, 32, 35) transparent;
 
+}
+.promoted{
+    text-overflow: ellipsis; 
+    overflow: hidden;
+     white-space:break-spaces;
+}
 .product-maker-info {
-    /* border: 1px solid palegreen; */
+    /* border: 1px solid palegreen;  */
     padding: 1.2rem 0rem;
 }
 
@@ -1609,13 +1630,30 @@ html {
 .thank-txt{
     display: flex;
     gap: 2rem;
+    /* align-items: center; */
+   
+}
+.thank-txt>span>i{
+    border: .3rem solid #fc8019;
+    padding: .6rem;
+    font-size: 2rem;
+    border-radius: 100%;
+    font-weight: bold;
+    margin-top: -6rem;
+}
+.s-d-info{
+    margin-top: 3rem;
+    display: flex;
 }
 .s-d-note{
-    border: .1rem solid black;
-    width: 60%;
+    /* border: .1rem solid black; */
+    width: 85%;
     /* margin-left: 6rem; */
-    margin: 6rem auto;
+    margin: auto;
     margin-top: 15rem;
+    display: flex;
+    justify-content: left;
+   
 }
 .success-icon{
     font-size: 3rem;
@@ -1624,23 +1662,51 @@ html {
 .s-d-heading{
   font-size: 3rem;
     color:#fc8019;
-    margin-top: ;
+    /* margin-bottom: 3rem; */
+   
 }
 .s-d-para{
-    font-size: 1.6rem;
-    margin-top: 1rem;
-    
+    font-size: 1.5rem;
+    padding-left: 5rem;
+    margin-top: 1.4rem;
+    letter-spacing: .04rem;
+    /* border: .2rem solid red; */
+
 }
 .sw-wrapper{
-    width: 60%;
-    margin: 6rem auto;
-    /* border: .2rem solid palevioletred; */
-    padding: 6rem;
+    width: 65%;
+    margin: 8rem 0rem;
+    /* border: .2rem solid lightgrey; */
+    padding: 2.5rem 2rem 2.5rem 13rem;
+    box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.2),0 .2rem .5rem 0 rgba(0, 0, 0, 0.19);
 }
 .sw-sd-img{
-    width: 40%;
-    
-    border: .2rem solid blue;
+    width: 20%;
+    height: 40rem;
+    /* border: .2rem solid blue; */
+    position: relative;
+    z-index: 1;
+    left: 10rem;
+
+}
+.sn-right-img{
+    width: 22%;
+ float: right;
+    /* border: .2rem solid green; */
+    position: relative;
+    z-index: l;
+    left: 4rem;
+    top: .8rem;
+
+}
+.s-d-para-content{
+    width: 70%;
+    /* border: .2rem solid red; */
+   
+}
+.sn-right-img>img{
+    width: 100%;
+    height: 100%;
 }
 .sw-sd-img>img{
     width: 100%;
