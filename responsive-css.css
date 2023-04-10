@@ -71,7 +71,46 @@
         font-size: 32%;
     }   
 }
+@media screen and (max-width:600px){
+  .cart-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cart-left-side{
+    width: 97%;
+    margin: auto;
+  }
+  .c-left-top-div{
+    width: 100%;
+  }
+  .c-left-bottom-div{
+    width: 100%;
+  }
+  .cart-right-side{
+    width: 97%;
+    margin: 2rem auto;
 
+  }
+  .cart-right-top-div{
+    width: 100%;
+  }
+  .cart-right-bottom-div{
+    width: 100%;
+  }
+  .c-coupon-icon{
+    width: 3%;
+  }
+  .c-coupon-txt{
+    width: 95%;
+  }
+  .checkbox-icon{
+    width: 5%;
+  }
+  .cart-d-notice{
+    width: 95%;
+  }
+}
 
 
 
