@@ -1858,6 +1858,7 @@ text-align: center;
 .payment-opt-name{
     border: .2rem solid greenyellow;
     width: 30%;
+    background: #edf1f7;
 }
 
 .payment-opt-info{
