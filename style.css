@@ -1448,17 +1448,11 @@ html {
 .l-right-side {
     width: 38%;
     /* border: .1rem solid green; */
-    padding: 4rem;
+    padding: 1rem 4rem;
     left: auto;
     right: 0px;
     position: fixed;
 }
-
-.l-content-wrapper {
-    /* border: .1rem solid orange; */
-
-}
-
 .login-create-ac {
     display: flex;
     justify-content: space-between;
@@ -1478,8 +1472,8 @@ html {
     top: 0;
     left: 0;
     background: transparent;
-    padding: 1.6rem;
-    border: .2rem solid red;
+    padding: 1.4rem;
+    /* border: .2rem solid red; */
     font-size: 1.4rem;
 }
 
@@ -1487,7 +1481,7 @@ html {
     position: absolute;
     top: 1;
     left: 1;
-    padding: 1.6rem;
+    padding: 1.4rem;
     display: inline-block;
     font-size: 1.4rem;
     transition: .5s;
@@ -1523,7 +1517,7 @@ html {
 }
 
 .l-close-btn>a {
-    font-size: 2.8rem;
+    font-size: 2rem;
     color: #535665;
     cursor: pointer;
     font-weight: 600;
@@ -1585,7 +1579,7 @@ html {
 }
 
 .l-ref-txt {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 1.6rem;
     font-weight: 600;
     color: #5d8ed5;
@@ -1602,7 +1596,7 @@ html {
     margin-bottom: 1rem;
 }
 
-.l-login-btn>a {
+.l-login-btn>input {
     width: 100%;
     cursor: pointer;
     text-align: center;
@@ -1612,7 +1606,7 @@ html {
     font-size: 1.4rem;
     font-weight: 600;
     padding: 2.2rem;
-    margin-top: 2.6rem;
+    margin-top: 1rem;
     color: white;
     background-color: #fc8019;
     color: #fff;

@@ -38,17 +38,17 @@
 
                     </div>
 
-                    <form action="">
+                    <form action="" onsubmit="login(event)">
                         <div class="l-input-login">
-                            <input type="tel" required/>
-                            <label for="">Phone number</label>
-
+                            <input type="email" id="useremail" required />
+                            <label for="">Email</label>
                         </div>
-                        <div class="l-login-btn" >
-                            <a href="">
-                                <input type="number" style="display: none;">LOGIN
-                            </a>
-
+                        <div class="l-input-login">
+                            <input type="password" id="userpassword" required>
+                            <label for="">Password</label>
+                        </div>
+                        <div class="l-login-btn">
+                            <input type="submit" value="LOGIN">
                         </div>
                         <div class="l-login-para">
                             <p>By clicking on Login, I accept the <a href="">Terms & Conditions</a> &
@@ -65,6 +65,7 @@
             </div>
         </div>
     </div>
+    <script src="./main.js"></script>
 
 </body>
 

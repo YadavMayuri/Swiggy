@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <script src="https://kit.fontawesome.com/174a9c1444.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./images/swiggy-favicon.svg" type="image/x-icon">
 </head>
+
 <body>
     <div id="l-screen">
         <div class="l-container">
@@ -19,8 +21,8 @@
             <div class="l-right-side">
                 <div class="l-content-wrapper">
                     <div class="l-close-btn">
-                        <a href="./product.html"> <i class="fa-solid fa-xmark"></i></a> 
-                      </div>
+                        <a href="./product.html"> <i class="fa-solid fa-xmark"></i></a>
+                    </div>
                     <div class="login-create-ac">
                         <div class="l-left-login">
                             <h1 class="l-heading">Sign up</h1>
@@ -36,28 +38,26 @@
 
                     </div>
 
-                    <form action="">
+                    <form action="" onsubmit="register(event)">
                         <div class="l-input-login">
-                            <input type="tel" required/>
-                            <label for="">Phone number</label>
-
-                        </div>
-                        <div class="l-input-login">
-                            <input type="text" required/>
+                            <input type="text" id="username" required />
                             <label for="">Name</label>
-
                         </div>
                         <div class="l-input-login">
-                            <input type="email" required/>
+                            <input type="email" id="useremail" required />
                             <label for="">Email</label>
-
+                        </div>
+                        <div class="l-input-login">
+                            <input type="password" id="userpassword" required>
+                            <label for="">Password</label>
+                        </div>
+                        <div class="l-input-login">
+                            <input type="password" id="userconfirmpassword" required>
+                            <label for="">Confirm Password</label>
                         </div>
                         <button class="l-ref-txt">Have a referral code?</button>
-                        <div class="l-login-btn" >
-                            <a href="">
-                                <input type="number" style="display: none;">CONTINUE
-                            </a>
-
+                        <div class="l-login-btn">
+                            <input type="submit" value="sign Up">
                         </div>
                         <div class="l-login-para">
                             <p>By clicking on Login, I accept the <a href="">Terms & Conditions</a> &
@@ -75,6 +75,8 @@
         </div>
     </div>
 
-    
+    <script src="./main.js"></script>
+
 </body>
+
 </html>
