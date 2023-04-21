@@ -60,7 +60,7 @@
                             <div>
                                 <a href="./login-page.html" class="p-icon-link">
                                     <span class="p-nav-icon"><i class="fa-regular fa-user"></i></span>
-                                    <span class="p-nav-menu">Sign In</span>
+                                    <span class="p-nav-menu" id="switch">Sign In</span>
                                 </a>
                             </div>
                         </li>
@@ -568,6 +568,26 @@
         </div>
 
     </div>
+
+    <script>
+        window.onload=function(){
+            // alert("working")
+            var currentUser= JSON.parse(localStorage.getItem("SwiggyCurrentUser"))
+            // console.log(currentUser,"current user");
+            if (!!currentUser){
+                // alert(currenUser,"username")
+                var divfromHtml = document.getElementById("switch");
+                // console.log(divfromHtml, "divfromhtml");
+                // var h1=document.createElement("h1");
+                // h1.innerText="Mayuri"
+                // divfromHtml.append(h1)
+                var name=`<span>${currentUser.userName}</span>`;
+                divfromHtml.innerHTML=name;
+            }else{
+                alert("current user absent")
+            }
+        }
+    </script>
 
 </body>
 

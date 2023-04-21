@@ -16,7 +16,7 @@ function register(event) {
 
             if (password == confirmpassword) {
 
-                var Ls = JSON.parse(localStorage.getItem("Users")) || []
+                var Ls = JSON.parse(localStorage.getItem("Swiggy-Users")) || []
                 var flag = false;
                 for (var i = 0; i < Ls.length; i++) {
                     if (Ls[i].userEmail == email) {
@@ -31,7 +31,7 @@ function register(event) {
                         userConfirmPassword: confirmpassword
                     }
                     Ls.push(userdata);
-                    localStorage.setItem("Users", JSON.stringify(Ls))
+                    localStorage.setItem("Swiggy-Users", JSON.stringify(Ls))
                     alert("Registration Successful")
                     window.location.href="./login-page.html";
                     document.getElementById("username").value = ""
@@ -64,20 +64,24 @@ function login(event) {
     var userEmail = document.getElementById("useremail").value;
     var userPassword = document.getElementById("userpassword").value;
 
-    var Ls = JSON.parse(localStorage.getItem("Users"));
-
+    var Ls = JSON.parse(localStorage.getItem("Swiggy-Users"));
+    var currentUser;
     var flag = false;
     for (var i = 0; i < Ls.length; i++) {
         if (Ls[i].userEmail == userEmail && Ls[i].userPassword == userPassword) {
             flag = true;
+            currentUser=Ls[i];
         }
     }
     if (flag == true) {
+        localStorage.setItem("SwiggyCurrentUser",JSON.stringify(currentUser));
         alert("login successfull")
-        window.location.href="./index.html";
+        window.location.href="./product.html";
     }
     else {
         alert("Credintails not matched")
     }
 
 }
+
+
