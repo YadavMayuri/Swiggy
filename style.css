@@ -108,7 +108,7 @@ html {
 
 .ans-line {
     font-size: 2.4rem;
-    width: 60rem;
+    /* width: 60rem; */
     letter-spacing: 0.3px;
     color: #686b78;
     font-weight: 300;
@@ -361,6 +361,7 @@ html {
 
 /* section-4---footer */
 .section-4 {
+    width: 100%;
     background-color: black;
     color: white;
 
@@ -580,6 +581,14 @@ html {
     gap: 5px;
     /* justify-content: space-between; */
 }
+.location-name:hover .exact-location{
+    color: #fc8019;
+    border-bottom: .2rem solid #fc8019;
+
+}
+.location-name:hover .sub-location{
+    color: rgb(150, 150, 150);
+}
 
 .product-swiggy-logo>a>img {
     width: 100%;
@@ -596,12 +605,6 @@ html {
     letter-spacing: 0.4px;
     border-bottom: .2rem solid #3d4152;
     /* width: 13%; */
-}
-
-.exact-location:hover {
-    color: #fc8019;
-    border-bottom: .2rem solid #fc8019;
-
 }
 
 .sub-location {
@@ -641,7 +644,10 @@ html {
     /* border: 1px solid palevioletred; */
 }
 
-.p-list-item:hover {
+.p-icon-link:hover .p-nav-icon  {
+    color: #fc8019;
+}
+.p-icon-link:hover .p-nav-menu {
     color: #fc8019;
 }
 
@@ -1434,8 +1440,8 @@ html {
 
 
 .l-left-side {
-    width: 62%;
-    /* border: .1rem solid blue; */
+    width: 0%;
+    /* border: .1rem solid blue;
     z-index: 10000;
     position: fixed;
     top: 0;
@@ -1444,18 +1450,20 @@ html {
     bottom: 0;
     background: #282c3f;
     opacity: .7;
-    overflow: hidden;
+    overflow: hidden; */
 
 }
 
 .l-right-side {
-    width: 38%;
+    width: 65%;
     /* border: .1rem solid green; */
     padding: 1rem 4rem;
-    left: auto;
-    right: 0px;
-    position: fixed;
+    /* left: auto; */
+    /* right: 0px; */
+    /* position: fixed; */
+    margin: auto;
 }
+
 .login-create-ac {
     display: flex;
     justify-content: space-between;
@@ -1505,7 +1513,7 @@ html {
 }
 
 .l-right-img {
-    width: 25%;
+    width: 15%;
     /* border: .1rem solid greenyellow; */
 }
 
@@ -1845,6 +1853,7 @@ html {
     line-height: 2.14;
     font-size: 1.6rem;
     text-align: center;
+    cursor: pointer;
 }
 
 .c-d-cart-head {

@@ -27,9 +27,8 @@
                         <span class="sub-location"> Navi Mumbai, Maharashtra, India</span>
                         <span class="up-arrow"><i class="fa-solid fa-angle-down"></i></span>
                     </div>
-
-
                 </div>
+                
                 <div class="right-navbar">
                     <ul class="p-navbar-list">
                         <li class="p-list-item">
@@ -137,7 +136,7 @@
                             <div class="promoted">PROMOTED</div>
                         </div>
                     </div>
-                   
+
                     <div class="product-maker-info">
                         <div class="product-maker-name">Ravi Chinese </div>
                         <div class="product-maker-location">Chinese, Indian</div>
@@ -163,7 +162,7 @@
                     </div>
                 </a>
             </div>
-           
+
 
 
             <div class="product-dish">
@@ -570,20 +569,20 @@
     </div>
 
     <script>
-        window.onload=function(){
+        window.onload = function () {
             // alert("working")
-            var currentUser= JSON.parse(localStorage.getItem("SwiggyCurrentUser"))
+            var currentUser = JSON.parse(localStorage.getItem("SwiggyCurrentUser"))
             // console.log(currentUser,"current user");
-            if (!!currentUser){
+            if (!!currentUser) {
                 // alert(currenUser,"username")
                 var divfromHtml = document.getElementById("switch");
                 // console.log(divfromHtml, "divfromhtml");
                 // var h1=document.createElement("h1");
                 // h1.innerText="Mayuri"
                 // divfromHtml.append(h1)
-                var name=`<span>${currentUser.userName}</span>`;
-                divfromHtml.innerHTML=name;
-            }else{
+                var name = `<span>${currentUser.userName}</span>`;
+                divfromHtml.innerHTML = name;
+            } else {
                 alert("current user absent")
             }
         }
