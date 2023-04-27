@@ -634,7 +634,7 @@ html {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 1.4rem;
+    /* font-size: 1rem; */
     align-items: center;
     /* border: 1px solid blue; */
     /* margin-top: 22px; */
@@ -642,7 +642,7 @@ html {
 }
 
 .p-list-item {
-    width: 16%;
+    /* width: 16%; */
     /* border: 1px solid palevioletred; */
 }
 
@@ -762,6 +762,7 @@ html {
     text-transform: capitalize;
     font-weight: 300;
     cursor: pointer;
+    border: .1rem solid red;
 
 }
 
@@ -1683,7 +1684,7 @@ html {
 }
 
 .s-d-note {
-    border: .1rem solid black;
+    /* border: .1rem solid black; */
     width: 85%;
     /* margin-left: 6rem; */
     margin: 15rem auto;
@@ -1699,7 +1700,7 @@ html {
 }
 
 .s-d-heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #fc8019;
     /* margin-bottom: 3rem; */
 
