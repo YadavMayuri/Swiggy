@@ -20,6 +20,10 @@
     html {
         font-size: 50%;
     }
+    .l-right-side{
+        width: 70%;
+       
+    }
 }
 
 @media screen and (max-width:920px) {

@@ -581,12 +581,14 @@ html {
     gap: 5px;
     /* justify-content: space-between; */
 }
-.location-name:hover .exact-location{
+
+.location-name:hover .exact-location {
     color: #fc8019;
     border-bottom: .2rem solid #fc8019;
 
 }
-.location-name:hover .sub-location{
+
+.location-name:hover .sub-location {
     color: rgb(150, 150, 150);
 }
 
@@ -644,11 +646,18 @@ html {
     /* border: 1px solid palevioletred; */
 }
 
-.p-icon-link:hover .p-nav-icon  {
+.p-icon-link:hover .p-nav-icon {
     color: #fc8019;
 }
+
 .p-icon-link:hover .p-nav-menu {
     color: #fc8019;
+}
+
+.sup-new {
+    color: #ffa700;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .p-list-item>div>a {
@@ -753,6 +762,11 @@ html {
     text-transform: capitalize;
     font-weight: 300;
     cursor: pointer;
+
+}
+
+.right-filter-menu:hover {
+    color: #2f2f2f;
 
 }
 
@@ -922,7 +936,20 @@ html {
 }
 
 .delivery-time {
-    width: 24%;
+    width: 29%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #535665;
+    cursor: pointer;
+    text-transform: uppercase;
+    /* border: 1px solid green; */
+    text-align: center;
+
+}
+
+.delivery-qty-count {
+    width: 45%;
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.2;
@@ -931,18 +958,6 @@ html {
     text-transform: uppercase;
     /* border: 1px solid green; */
     text-align: end;
-
-}
-
-.delivery-qty-count {
-    width: 40%;
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 1.2;
-    color: #535665;
-    cursor: pointer;
-    text-transform: uppercase;
-    /* border: 1px solid green; */
 
 }
 
@@ -1455,13 +1470,16 @@ html {
 }
 
 .l-right-side {
-    width: 65%;
+    width: 50%;
     /* border: .1rem solid green; */
-    padding: 1rem 4rem;
+    padding: 2rem 4rem;
     /* left: auto; */
     /* right: 0px; */
     /* position: fixed; */
     margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+
+
 }
 
 .login-create-ac {
@@ -1523,8 +1541,7 @@ html {
 }
 
 .l-close-btn {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.4rem;
 }
 
 .l-close-btn>a {
@@ -1537,7 +1554,7 @@ html {
 }
 
 .l-heading {
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #282c3f;
     letter-spacing: .04rem;
     line-height: 1.2;
