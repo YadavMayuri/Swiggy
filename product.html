@@ -28,7 +28,7 @@
                         <span class="up-arrow"><i class="fa-solid fa-angle-down"></i></span>
                     </div>
                 </div>
-                
+
                 <div class="right-navbar">
                     <ul class="p-navbar-list">
                         <li class="p-list-item">
@@ -70,6 +70,12 @@
                                     <span class="p-nav-menu">Cart</span>
                                 </a>
                             </div>
+                        </li>
+                        <li>
+                            <div id="logout">
+
+                            </div>
+
                         </li>
 
                     </ul>
@@ -132,9 +138,9 @@
                 <a href="">
                     <div class="product-image">
                         <img src="./images/p1.jpg " alt="">
-                        <div class="promoted-wrapper">
+                        <!-- <div class="promoted-wrapper">
                             <div class="promoted">PROMOTED</div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="product-maker-info">
@@ -157,9 +163,9 @@
                         <span class="discount-number">40% off | Use TRYNEW</span>
                     </div>
                     <hr class="h-line">
-                    <div class="quick-view">
+                    <!-- <div class="quick-view">
                         QUICK VIEW
-                    </div>
+                    </div> -->
                 </a>
             </div>
 
@@ -569,25 +575,31 @@
     </div>
 
     <script>
+
         window.onload = function () {
             // alert("working")
             var currentUser = JSON.parse(localStorage.getItem("SwiggyCurrentUser"))
             // console.log(currentUser,"current user");
             if (!!currentUser) {
                 // alert(currenUser,"username")
+                var logoutDiv = document.getElementById("logout")
                 var divfromHtml = document.getElementById("switch");
                 // console.log(divfromHtml, "divfromhtml");
                 // var h1=document.createElement("h1");
                 // h1.innerText="Mayuri"
                 // divfromHtml.append(h1)
+                var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout()" class="logout-button-txt">Logout</button></span>'
                 var name = `<span>${currentUser.userName}</span>`;
                 divfromHtml.innerHTML = name;
-            } else {
-                alert("current user absent")
-            }
-        }
-    </script>
+                logoutDiv.innerHTML = button;
 
+            }
+            //  else {
+            //     alert("current user absent")
+            // }
+        }
+
+    </script>
 </body>
 
 </html>

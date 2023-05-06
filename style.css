@@ -762,7 +762,7 @@ html {
     text-transform: capitalize;
     font-weight: 300;
     cursor: pointer;
-    border: .1rem solid red;
+    /* border: .1rem solid red; */
 
 }
 
@@ -2295,4 +2295,22 @@ html {
     letter-spacing: .04rem;
     font-size: 1.4rem;
 
+}
+
+
+/* logout button */
+.logout-button-txt{
+    background-color: white;
+    border: none;
+    outline: none;
+    font-size:1.6rem;
+    color: #3d4152;
+    cursor: pointer;
+    
+    
+}
+.lgbtn-wrap i{
+    color: #3d4152;
+    cursor: pointer;
+    
 }

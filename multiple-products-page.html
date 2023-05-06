@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order food online from India's best food delivery service. Order from restaurants near you</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/responsive-css.css">
+    <script src="https://kit.fontawesome.com/174a9c1444.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/swiggy-favicon.svg" type="image/x-icon">
+    <style>
+        #products {
+            width: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: left;
+            flex-wrap: wrap;
+            gap: 2.8rem;
+            /* padding: 1rem; */
+            margin: 2rem;
+        }
+
+        #products>a {
+            width: 23%;
+            border: 1px solid lightgray;
+            /* text-align: center; */
+            margin-bottom: 1.6rem;
+            color: black;
+            text-decoration: none;
+        }
+
+        #products>a>div>img {
+            width: 100%;
+            /* height: 100%; */
+        }
+
+        .mpp-pro-name {
+            margin: 1rem 1.2rem 0 1.2rem;
+            font-size: 1.4rem;
+        }
+
+        .mpp-pro-price {
+            margin: 1rem 1.2rem;
+            font-size: 1.4rem;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="navbar">
+            <div class="left-navbar">
+                <div class="product-swiggy-logo">
+                    <a href="./index.html">
+                        <img src="./images/swiggy-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="location-name">
+                    <span class="exact-location">Vashi</span>
+                    <span class="sub-location"> Navi Mumbai, Maharashtra, India</span>
+                    <span class="up-arrow"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+            </div>
+
+            <div class="right-navbar">
+                <ul class="p-navbar-list">
+                    <li class="p-list-item">
+                        <div class="product-nav-link">
+                            <a href="" class="p-icon-link">
+                                <span class="p-nav-icon"><i class="fa-solid fa-magnifying-glass "></i></span>
+                                <span class="p-nav-menu">Search</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div>
+                            <a href="" class="p-icon-link">
+                                <span class="p-nav-icon"><i class="fa-solid fa-percent"></i></span>
+                                <span class="p-nav-menu">Offers<sup class="sup-new">NEW</sup> </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div>
+                            <a href="" class="p-icon-link">
+                                <span class="p-nav-icon"><i class="fa-solid fa-life-ring"></i></span>
+                                <span class="p-nav-menu">Help</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div>
+                            <a href="./login-page.html" class="p-icon-link">
+                                <span class="p-nav-icon"><i class="fa-regular fa-user"></i></span>
+                                <span class="p-nav-menu" id="switch">Sign In</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div>
+                            <a href="./cart.html" class="p-icon-link">
+                                <span class="p-nav-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span class="p-nav-menu">Cart</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="logout">
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- section-1 -->
+    <div class="p-slider">
+        <div class="slider-img">
+            <a href="">
+                <img src="./images/slider-img1.png" alt="">
+            </a>
+        </div>
+        <div class="slider-img">
+            <a href="">
+                <img src="./images/slider-img2.jpg" alt="">
+            </a>
+        </div>
+        <div class="slider-img">
+            <a href="">
+                <img src="./images/slider-img3.jpg" alt="">
+            </a>
+        </div>
+        <div class="slider-img">
+            <a href="">
+                <img src="./images/slider-img4.jpg" alt="">
+            </a>
+        </div>
+
+    </div>
+
+    <!-- second navbar------------ -->
+    <div class="filter-content-wrapper">
+
+        <div class="left-filter-content">
+            <h2>930 restaurants</h2>
+        </div>
+        <div class="right-filter-content">
+            <div class="right-filter-menu active-filter-menu">Relevance</div>
+            <div class="right-filter-menu">Delivery Time </div>
+            <div class="right-filter-menu">Rating </div>
+            <div class="right-filter-menu">Cost: Low to High </div>
+            <div class="right-filter-menu">Cost: High to Low </div>
+            <div class="right-filter-menu">
+                <span class="filter-txt"> Filters</span>
+                <span class="p-filter-icon"><i class="fa-solid fa-arrow-up-a-z"></i></span>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- --products-- -->
+
+    <div class="product-content-wrapper">
+        <div id="products"></div>
+
+    </div>
+
+
+    <!-- section-4 -->
+    <div class="section-4">
+        <div class="footer-1">
+            <div class="company">
+                <div class="footer-top-heading">Company</div>
+                <ul class="footer-opt">
+                    <li><a href="">About us </a></li>
+                    <li><a href="">Team </a></li>
+                    <li><a href="">Careers </a></li>
+                    <li><a href="">Swiggy Blog </a></li>
+                    <li><a href="">Bug Bounty </a></li>
+                    <li><a href="">Swiggy one </a></li>
+                    <li><a href="">Swiggy Corporate </a></li>
+                    <li><a href="">Sweiggy Instamart </a></li>
+                    <li><a href="">Swiggy Genie </a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <div class="footer-top-heading">Contact</div>
+                <ul class="footer-opt">
+                    <li><a href="">Help & Support </a></li>
+                    <li><a href="">Partner With us </a></li>
+                    <li><a href="">Ride With us </a></li>
+
+                </ul>
+            </div>
+            <div class="legal">
+                <div class="footer-top-heading">Legal</div>
+                <ul class="footer-opt">
+                    <li><a href="">Terms & Conditions </a></li>
+                    <li><a href="">Refund & Cancellation </a></li>
+                    <li><a href="">Privacy Policy </a></li>
+                    <li><a href="">Cookie Policy </a></li>
+                    <li><a href="">Offer Terms </a></li>
+                    <li><a href="">Phishing & Fraud </a></li>
+                    <li><a href=""> Corporate – Swiggy Money Codes Terms and Conditions</a></li>
+                    <li><a href=""> Corporate - Swiggy Discount Voucher Terms and Conditions</a></li>
+
+                </ul>
+
+            </div>
+            <div class="get-app">
+
+                <div class="footer-apps-img">
+                    <img src="./images/appstoreimg.png" alt="">
+                </div>
+                <div class="footer-apps-img">
+                    <img src="./images/playstoreimg.png" alt="">
+                </div>
+            </div>
+        </div>
+        <hr class="hr-line">
+        <div class="footer-2">
+            <div class="footer-top-heading">we deliver to</div>
+            <div class="name-of-cities">
+                <div class="city-to-deliver">
+                    <ul class="footer-opt">
+                        <li><a href="">Abhor </a></li>
+                        <li><a href="">Adilabad </a></li>
+                        <li><a href="">Adityapur </a></li>
+                        <li><a href="">Adoni </a></li>
+                        <li><a href="">Agartala </a></li>
+                    </ul>
+                </div>
+                <div class="city-to-deliver">
+                    <ul class="footer-opt">
+                        <li><a href="">Deharadun </a></li>
+                        <li><a href="">Dehari </a></li>
+                        <li><a href="">Delhi </a></li>
+                        <li><a href="">Deoghar </a></li>
+                        <li><a href="">Deoria-city </a></li>
+                    </ul>
+                </div>
+                <div class="city-to-deliver">
+                    <ul class="footer-opt">
+                        <li><a href="">Khana </a></li>
+                        <li><a href="">Kharagpur </a></li>
+                        <li><a href="">Kishanganj </a></li>
+                        <li><a href="">Kishangarh </a></li>
+                        <li><a href="">Kochi </a></li>
+                    </ul>
+                </div>
+                <div class="city-to-deliver">
+                    <ul class="footer-opt">
+                        <li><a href="">Purulia </a></li>
+                        <li><a href="">Pusad </a></li>
+                        <li><a href="">Puttur </a></li>
+                        <li><a href="">Rae-Bareli </a></li>
+                        <li><a href="">Raghunathpur </a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="hr-line">
+
+        <div class="footer-3">
+            <div class="swiggy-logo">
+                <img src="./images/swiggy-footer-img.webp" alt="">
+            </div>
+            <div class="copyright">
+                © 2023 Swiggy
+            </div>
+            <div class="social-media-icons">
+                <a href=""><i class="fa-brands fa-facebook-f"></i> </a>
+                <a href=""><i class="fa-brands fa-pinterest"></i> </a>
+                <a href=""><i class="fa-brands fa-instagram"></i> </a>
+                <a href=""><i class="fa-brands fa-twitter"></i> </a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <script>
+
+        window.onload = function () {
+            // alert("working")
+            var currentUser = JSON.parse(localStorage.getItem("SwiggyCurrentUser"))
+            // console.log(currentUser,"current user");
+            if (!!currentUser) {
+                // alert(currenUser,"username")
+                var logoutDiv = document.getElementById("logout")
+                var divfromHtml = document.getElementById("switch");
+                // console.log(divfromHtml, "divfromhtml");
+                // var h1=document.createElement("h1");
+                // h1.innerText="Mayuri"
+                // divfromHtml.append(h1)
+                var button = '<span class="lgbtn-wrap"><i class="fa-solid fa-arrow-right-from-bracket id=logout-icon"></i> <button onclick="logout()" class="logout-button-txt">Logout</button></span>'
+                var name = `<span>${currentUser.userName}</span>`;
+                divfromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
+
+            }
+            //  else {
+            //     alert("current user absent")
+            // }
+
+            var divToShowProducts = document.getElementById("products");
+            var finalData = "";
+
+            var productsFromLS = JSON.parse(localStorage.getItem("swiggy-Products"))
+            for (var i = 0; i < productsFromLS.length; i++) {
+                finalData += `<a href="./single-product-page.html"><div id='singlePro'><img src=${productsFromLS[i].proImage} /><h3 class="mpp-pro-name">${productsFromLS[i].proName}</h3><p class="mpp-pro-price">₹  ${productsFromLS[i].proPrice}</p></div></a>`;
+            }
+
+            // console.log(finalData, "finalData here")
+
+            divToShowProducts.innerHTML = finalData;
+        }
+
+
+        function logout() {
+            alert("Logout successful.")
+            localStorage.removeItem("SwiggyCurrentUser")
+            window.location.reload()
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>

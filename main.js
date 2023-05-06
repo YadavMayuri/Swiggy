@@ -76,12 +76,34 @@ function login(event) {
     if (flag == true) {
         localStorage.setItem("SwiggyCurrentUser",JSON.stringify(currentUser));
         alert("login successfull")
-        window.location.href="./product.html";
+        window.location.href="multiple-products-page.html";
     }
     else {
         alert("Credintails not matched")
     }
 
 }
+
+
+
+
+
+//logout
+
+function logout() {
+    alert("Logout successful.")
+    localStorage.removeItem("SwiggyCurrentUser")
+    window.location.reload()
+
+
+}
+
+
+
+
+
+
+
+
 
 
