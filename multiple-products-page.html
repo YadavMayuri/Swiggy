@@ -22,7 +22,7 @@
             margin: 2rem;
         }
 
-        #products>a {
+        #products>div{
             width: 23%;
             border: 1px solid lightgray;
             /* text-align: center; */
@@ -31,7 +31,7 @@
             text-decoration: none;
         }
 
-        #products>a>div>img {
+        #products>div>img {
             width: 100%;
             /* height: 100%; */
         }
@@ -322,7 +322,7 @@
 
             var productsFromLS = JSON.parse(localStorage.getItem("swiggy-Products"))
             for (var i = 0; i < productsFromLS.length; i++) {
-                finalData += `<a href="./single-product-page.html"><div id='singlePro'><img src=${productsFromLS[i].proImage} /><h3 class="mpp-pro-name">${productsFromLS[i].proName}</h3><p class="mpp-pro-price">₹  ${productsFromLS[i].proPrice}</p></div></a>`;
+                finalData += `<div onclick='redirect(${JSON.stringify(productsFromLS[i])})' id='singlePro'><img src=${productsFromLS[i].proImage} /><h3 class="mpp-pro-name">${productsFromLS[i].proName}</h3><p class="mpp-pro-price">₹  ${productsFromLS[i].proPrice}</p></div>`;
             }
 
             // console.log(finalData, "finalData here")
@@ -330,6 +330,14 @@
             divToShowProducts.innerHTML = finalData;
         }
 
+        
+        function redirect(product) {
+            var singleProduct = JSON.stringify(product);
+            // console.log(s, " s here")
+            // alert("Working")
+            localStorage.setItem("current-product", singleProduct);
+            window.location.href = './singleProduct.html'
+        }
 
         function logout() {
             alert("Logout successful.")

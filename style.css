@@ -1369,13 +1369,13 @@ html {
     outline: none;
     border: .1rem solid #8b8d97;
     border-radius: .5rem;
-    width: 60%;
+    width: 80%;
     /* height: 4rem; */
     cursor: pointer;
     z-index: 1;
     position: relative;
     margin-top: -7rem;
-    margin-left: 3.2rem;
+    margin-left: 1.6rem;
 }
 
 .main-border {
