@@ -1823,6 +1823,7 @@ html {
     /* border: .2rem solid red; */
     width: 28%;
     margin-top: 3rem;
+    margin-bottom: 3rem;
 
 }
 
@@ -2038,6 +2039,7 @@ html {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    
 
 }
 
@@ -2079,7 +2081,11 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: .1rem solid lightgrey;
+    padding-bottom: 1rem;
+
 }
 
 .cart-veg-icon {
@@ -2313,4 +2319,19 @@ html {
     color: #3d4152;
     cursor: pointer;
     
+}
+.remove-cart-btn{
+    cursor: pointer;
+
+}
+.remove-cart-btn:hover{
+    color: red;
+    font-weight: 600;
+}
+.add-cart-btn{
+    cursor: pointer;
+}
+.add-cart-btn:hover{
+    font-weight: 600;
+    color: green;
 }

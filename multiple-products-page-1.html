@@ -22,7 +22,7 @@
             margin: 2rem;
         }
 
-        #products>div{
+        #products>div {
             width: 23%;
             border: 1px solid lightgray;
             /* text-align: center; */
@@ -170,9 +170,43 @@
 
     <!-- --products-- -->
 
-    <div class="product-content-wrapper">
+    <!-- <div class="product-content-wrapper">
         <div id="products"></div>
 
+    </div> -->
+    <div class="product-content-wrapper" id="finalswiggyproducts">
+        <div class="product-dish">
+
+            <div class="product-image" id="product-img">
+                <!-- <img src="./images/p1.jpg " alt=""> -->
+
+            </div>
+
+            <div class="product-maker-info">
+                <div class="product-maker-name" id="for-product-name"> </div>
+                <!-- <div class="product-maker-location">Chinese, Indian</div> -->
+            </div>
+            <div class="rating-price-info">
+                <div class="rating">
+                    <span class="rating-icon"><i class="fa-solid fa-star"></i></span>
+                    <span class="rating-count">3.8</span>
+                </div>
+                <div class="dot-icon">.</div>
+                <div class="delivery-time">19 mins</div>
+                <div class="dot-icon">.</div>
+                <div class="delivery-qty-count" id="for-product-price"> FOR TWO</div>
+            </div>
+            <hr class="h-line">
+            <div class="discount-offer-info">
+                <span class="discount-icon"><i class="fa-solid fa-percent"></i></span>
+                <span class="discount-number">40% off | Use TRYNEW</span>
+            </div>
+            <hr class="h-line">
+            <!-- <div class="quick-view">
+                    QUICK VIEW
+                </div> -->
+
+        </div>
     </div>
 
 
@@ -317,20 +351,77 @@
             //     alert("current user absent")
             // }
 
-            var divToShowProducts = document.getElementById("products");
-            var finalData = "";
+            // var divToShowProducts = document.getElementById("products");
+            // var finalData = "";
+
+            // var productsFromLS = JSON.parse(localStorage.getItem("swiggy-Products"))
+            // for (var i = 0; i < productsFromLS.length; i++) {
+            //     finalData += `<div onclick='redirect(${JSON.stringify(productsFromLS[i])})' id='singlePro'><img src=${productsFromLS[i].proImage} /><h3 class="mpp-pro-name">${productsFromLS[i].proName}</h3><p class="mpp-pro-price">₹  ${productsFromLS[i].proPrice}</p></div>`;
+            // }
+
+            // // console.log(finalData, "finalData here")
+
+            // divToShowProducts.innerHTML = finalData;
+
+            var divToAppendProductImage = document.getElementById("product-img")
+            var divToAppendProductName = document.getElementById("for-product-name");
+            var divToAppendProductPrice = document.getElementById("for-product-price");
+            var divToAppendAllProducts = document.getElementById("finalswiggyproducts")
+
+            var finalImage = ""
+            var finalName = ""
+            var finalPrice = ""
+            var finalswiggyMultiplePro = ""
+
+           
 
             var productsFromLS = JSON.parse(localStorage.getItem("swiggy-Products"))
-            for (var i = 0; i < productsFromLS.length; i++) {
-                finalData += `<div onclick='redirect(${JSON.stringify(productsFromLS[i])})' id='singlePro'><img src=${productsFromLS[i].proImage} /><h3 class="mpp-pro-name">${productsFromLS[i].proName}</h3><p class="mpp-pro-price">₹  ${productsFromLS[i].proPrice}</p></div>`;
+
+            for (var i = 0; i <productsFromLS.length; i++) {
+                // finalData += `<div onclick='redirect(${JSON.stringify(productsFromLS[i])})' id='singlePro'><img src=${productsFromLS[i].proImage} /><h3 class="mpp-pro-name">${productsFromLS[i].proName}</h3><p class="mpp-pro-price">₹  ${productsFromLS[i].proPrice}</p></div>`;
+
+                finalswiggyMultiplePro += ` <div class="product-dish"  onclick='redirect(${JSON.stringify(productsFromLS[i])})'>
+            
+                <div class="product-image" id="product-img">
+                    <img src="${productsFromLS[i].proImage}" alt="">
+                  
+                </div>
+
+                <div class="product-maker-info">
+                    <div class="product-maker-name" id="for-product-name"> ${productsFromLS[i].proName} </div>
+                    <!-- <div class="product-maker-location">Chinese, Indian</div> -->
+                </div>
+                <div class="rating-price-info">
+                    <div class="rating">
+                        <span class="rating-icon"><i class="fa-solid fa-star"></i></span>
+                        <span class="rating-count">3.8</span>
+                    </div>
+                    <div class="dot-icon">.</div>
+                    <div class="delivery-time">19 mins</div>
+                    <div class="dot-icon">.</div>
+                    <div class="delivery-qty-count" id="for-product-price" > ₹${productsFromLS[i].proPrice} FOR TWO  </div>
+                </div>
+                <hr class="h-line">
+                <div class="discount-offer-info">
+                    <span class="discount-icon"><i class="fa-solid fa-percent"></i></span>
+                    <span class="discount-number">40% off | Use TRYNEW</span>
+                </div>
+                <hr class="h-line">
+                <!-- <div class="quick-view">
+                    QUICK VIEW
+                </div> -->
+        
+        </div>`
             }
 
-            // console.log(finalData, "finalData here")
+            divToAppendProductImage.innerHTML = finalImage;
+            divToAppendProductName.innerHTML = finalName;
+            divToAppendProductPrice.innerHTML = finalPrice;
+            divToAppendAllProducts.innerHTML = finalswiggyMultiplePro;
 
-            divToShowProducts.innerHTML = finalData;
         }
 
-        
+
         function redirect(product) {
             var singleProduct = JSON.stringify(product);
             // console.log(s, " s here")

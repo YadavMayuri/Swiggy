@@ -232,33 +232,36 @@
             </div>
             <div class="cart-right-side">
                 <div class="cart-right-top-div">
-                    <div class="cart-product-summery">
-                        <div class="cart-product-s-img" id="product-img">
-                            <!-- <img src="./images/burger-small-img.jpg" alt=""> -->
+                    <div class="cart-products-adding-wrap" id="finalcart">
+                        <div class="cart-product-summery">
+                            <div class="cart-product-s-img" id="product-img">
+                                <!-- <img src="./images/burger-small-img.jpg" alt=""> -->
+                            </div>
+                            <div class="cart-product-name-place">
+                                <p class="c-product-name" id="product-name"> </p>
+                                <p class="c-product-place">Vashi</p>
+                                <div class="c-underline"></div>
+                            </div>
                         </div>
-                        <div class="cart-product-name-place">
-                            <p class="c-product-name" id="product-name"> </p>
-                            <p class="c-product-place">Vashi</p>
-                            <div class="c-underline"></div>
+    
+                        <div class="product-add-remove-options">
+                            <div class="cart-veg-icon">
+                                <img src="./images/veg-icon.jpg" alt="">
+                            </div>
+                            <div class="product-veg-category" id="product-name">
+                                <!-- Veg Maharaja Mac -->
+                            </div>
+                            <div class="add-remove-btns">
+                                <span class="remove-cart-btn">-</span>
+                                <span>1</span>
+                                <span class="add-cart-btn">+</span>
+                            </div>
+                            <div class="cart-a-r-price" id="product-price">
+                                <!-- ₹220 -->
+                            </div>
                         </div>
                     </div>
-
-                    <div class="product-add-remove-options">
-                        <div class="cart-veg-icon">
-                            <img src="./images/veg-icon.jpg" alt="">
-                        </div>
-                        <div class="product-veg-category" id="product-name">
-                            <!-- Veg Maharaja Mac -->
-                        </div>
-                        <div class="add-remove-btns">
-                            <span>-</span>
-                            <span>1</span>
-                            <span>+</span>
-                        </div>
-                        <div class="cart-a-r-price" id="product-price">
-                            <!-- ₹220 -->
-                        </div>
-                    </div>
+                   
 
                     <div class="suggestion-content">
                         <h1>&ldquo;</h1>
@@ -483,30 +486,63 @@
                 //     alert("current user absent")
                 // }
                 var currentUser = JSON.parse(localStorage.getItem("SwiggyCurrentUser"))
-            var userdata = JSON.parse(localStorage.getItem("Swiggy-Users"))
-            var divToAppendProductImage = document.getElementById("product-img")
-            var divToAppendProductName = document.getElementById("product-name")
-            var divToAppendProductPrice = document.getElementById("product-price")
-            
+                var userdata = JSON.parse(localStorage.getItem("Swiggy-Users"))
+                var divToAppendProductImage = document.getElementById("product-img")
+                var divToAppendProductName = document.getElementById("product-name")
+                var divToAppendProductPrice = document.getElementById("product-price")
+                var divToAppendAllProducts = document.getElementById("finalcart")
 
-            var products;
-            for (var i = 0; i < userdata.length; i++) {
-                if (currentUser.userEmail == userdata[i].userEmail) {
-                    products = userdata[i].cartProducts
+
+
+                var products;
+                for (var i = 0; i < userdata.length; i++) {
+                    if (currentUser.userEmail == userdata[i].userEmail) {
+                        products = userdata[i].cartProducts
+                    }
                 }
-            }
-            var finalImage = ""
-            var finalName = ""
-            var finalPrice = ""
-            for (var i = 0; i < products.length; i++) {
-                
-                finalImage += `<div  class="final-product-img" > <img src='${products[i].proImage}' /></div > `
-                finalName += `${ products[i].proName } `
-                finalPrice += `₹${ products[i].proPrice } `
-            }
-            divToAppendProductImage.innerHTML = finalImage;
-            divToAppendProductName.innerHTML = finalName;
-            divToAppendProductPrice.innerHTML = finalPrice;
+                var finalImage = ""
+                var finalName = ""
+                var finalPrice = ""
+                var finalProductCart = "";
+
+                for (var i = 0; i < products.length; i++) {
+
+                    // finalImage += `<div  class="final-product-img" > <img src='${products[i].proImage}' /></div > `
+                    // finalName += `${products[i].proName} `
+                    // finalPrice += `₹${products[i].proPrice} `
+                    finalProductCart +=`  <div class="cart-product-summery">
+                            <div class="cart-product-s-img" id="product-img">
+                                <img src=" ${products[i].proImage}" alt="">
+                            </div>
+                            <div class="cart-product-name-place">
+                                <p class="c-product-name" id="product-name">  ${products[i].proName}</p>
+                                <p class="c-product-place">Vashi</p>
+                                <div class="c-underline"></div>
+                            </div>
+                        </div>
+    
+                        <div class="product-add-remove-options">
+                            <div class="cart-veg-icon">
+                                <img src="./images/veg-icon.jpg" alt="">
+                            </div>
+                            <div class="product-veg-category" id="product-name">
+                                ${products[i].proName}
+                            </div>
+                            <div class="add-remove-btns">
+                                <span  class="remove-cart-btn">-</span>
+                                <span>1</span>
+                                <span  class="add-cart-btn">+</span>
+                            </div>
+                            <div class="cart-a-r-price" id="product-price">
+                                ₹${products[i].proPrice} 
+                            </div>
+                        </div>`
+                }
+                divToAppendProductImage.innerHTML = finalImage;
+                divToAppendProductName.innerHTML = finalName;
+                divToAppendProductPrice.innerHTML = finalPrice;
+            divToAppendAllProducts.innerHTML = finalProductCart;
+
 
             }
 
