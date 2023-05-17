@@ -76,7 +76,7 @@ function login(event) {
     if (flag == true) {
         localStorage.setItem("SwiggyCurrentUser",JSON.stringify(currentUser));
         alert("login successfull")
-        window.location.href="multiple-products-page.html";
+        window.location.href="multiple-products-page-1.html";
     }
     else {
         alert("Credintails not matched")
